@@ -7,7 +7,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Strategy.StrategyPattern(args);
+        // Strategy パターン
+        //Strategy.StrategyPattern(args);
+
+        // Observer パターン
+        Observer.ObserverPattern(args);
     }
 }
 
