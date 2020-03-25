@@ -18,7 +18,7 @@ namespace DesignPattern.Observer
             observers.Remove(observer);
         }
 
-        public void notifyObservers()
+        public void NotifyObservers()
         {
             foreach (IObserver<NumberGenerator> _observer in observers)
             {

@@ -14,7 +14,7 @@ namespace DesignPattern.Observer
             for (int i = 0; i < 20; i++)
             {
                 number = random.Next(50);
-                notifyObservers();
+                NotifyObservers();
             }
         }
 
