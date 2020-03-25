@@ -11,7 +11,10 @@ class Program
         //Strategy.StrategyPattern(args);
 
         // Observer パターン
-        Observer.ObserverPattern(args);
+        //Observer.ObserverPattern(args);
+
+        // Flyweight パターン
+        Flyweight.FlyweightPattern(args);
     }
 }
 
