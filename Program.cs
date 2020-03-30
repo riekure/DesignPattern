@@ -14,7 +14,10 @@ class Program
         //Observer.ObserverPattern(args);
 
         // Flyweight パターン
-        Flyweight.FlyweightPattern(args);
+        //Flyweight.FlyweightPattern(args);
+
+        // Proxy パターン
+        Proxy.ProxyPattern(args);
     }
 }
 
