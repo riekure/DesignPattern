@@ -18,6 +18,8 @@ class Program
 
         // Proxy パターン
         Proxy.ProxyPattern(args);
+
+        Adapter.AdapterPattern(args);
     }
 }
 
