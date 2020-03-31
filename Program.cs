@@ -17,11 +17,13 @@ class Program
         //Flyweight.FlyweightPattern(args);
 
         // Proxy パターン
-        Proxy.ProxyPattern(args);
+        Proxy.ProxyMain();
 
-        Adapter.AdapterPattern(args);
+        Adapter.AdapterMain();
 
-        TemplateMethod.TemplateMethodPattern(args);
+        TemplateMethod.TemplateMethodMain();
+
+        FactoryMethod.FactoryMethodMain();
     }
 }
 

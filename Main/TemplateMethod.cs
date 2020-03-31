@@ -7,7 +7,7 @@ namespace DesignPattern.Main
 {
     public class TemplateMethod
     {
-        public static void TemplateMethodPattern(string[] args)
+        public static void TemplateMethodMain()
         {
             AbstractDisplay d1 = new CharDisplay('H');
             AbstractDisplay d2 = new StringDisplay("Hello, world.");

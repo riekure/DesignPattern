@@ -7,7 +7,7 @@ namespace DesignPattern.Main
 {
     public class Adapter
     {
-        public static void AdapterPattern(string[] args)
+        public static void AdapterMain()
         {
             IPrint p = new PrintBanner("Hello");
             p.PrintWeak();

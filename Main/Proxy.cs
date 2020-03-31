@@ -7,7 +7,7 @@ namespace DesignPattern.Main
 {
     public class Proxy
     {
-        public static void ProxyPattern(string[] args)
+        public static void ProxyMain()
         {
             IPrintable p = new PrinterProxy("Alice", "Printer");
             Console.WriteLine("名前は現在" + p.GetPrinterName() + "です。");
