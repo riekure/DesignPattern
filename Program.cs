@@ -20,6 +20,8 @@ class Program
         Proxy.ProxyPattern(args);
 
         Adapter.AdapterPattern(args);
+
+        TemplateMethod.TemplateMethodPattern(args);
     }
 }
 
