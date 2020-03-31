@@ -7,23 +7,20 @@ namespace DesignPattern.Proxy
     class PrinterProxy : IPrintable
     {
         string name;
-        Printer real;
+        IPrintable real;
+        string className;
 
-        public PrinterProxy()
-        {
-
-        }
-
-        public PrinterProxy(string name)
+        public PrinterProxy(string name, string className)
         {
             this.name = name;
+            this.className = className;
         }
 
-        public void SetprintName(string name)
+        public void SetPrintName(string name)
         {
             if (real != null)
             {
-                real.SetprintName(name);
+                real.SetPrintName(name);
             }
             this.name = name;
         }
@@ -43,7 +40,16 @@ namespace DesignPattern.Proxy
         {
             if (real == null)
             {
-                real = new Printer(name);
+                try
+                {
+                    var classType = Type.GetType("DesignPattern.Proxy." + className);
+                    real = (IPrintable)Activator.CreateInstance(classType);
+                    real.SetPrintName(name);
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("クラス " + className + "が見つかりません。");
+                }
             }
         }
     }

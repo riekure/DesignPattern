@@ -9,9 +9,9 @@ namespace DesignPattern.Main
     {
         public static void ProxyPattern(string[] args)
         {
-            IPrintable p = new PrinterProxy("Alice");
+            IPrintable p = new PrinterProxy("Alice", "Printer");
             Console.WriteLine("名前は現在" + p.GetPrinterName() + "です。");
-            p.SetprintName("Bob");
+            p.SetPrintName("Bob");
             Console.WriteLine("名前は現在" + p.GetPrinterName() + "です。");
             p.Print("Hello, world. ");
         }
