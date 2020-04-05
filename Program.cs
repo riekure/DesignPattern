@@ -1,4 +1,5 @@
 ﻿using DesignPattern.Main;
+using DesignPattern.Prototype;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -24,6 +25,8 @@ class Program
         TemplateMethod.TemplateMethodMain();
 
         FactoryMethod.FactoryMethodMain();
+
+        Prototype.PrototypeMain();
     }
 }
 
